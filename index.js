@@ -21,7 +21,7 @@ var m = new Multiplier()
 // Each Photo should store the photo's file name and the location the photo was taken in as strings. 
 // Create instances of each object defined to prove that your object model works.
 
-
+// problem 2 - using class method
 
 class Photo{
 	constructor(name, location){
@@ -32,11 +32,11 @@ class Photo{
 class Album{
 	var array = []
 
-	addPhoto(){
+	this.addPhoto(){
 		album.push(array)
 	    }
-    listPhoto(){
-    	for(i=0; i<alum.array.length; i++){
+    this.listPhotos(){
+    	for(i=0; i<album.array.length; i++){
     		console.log(alum.array[i])
     	}
     }
@@ -45,7 +45,7 @@ class Album{
 var pic1 = new Photo('grandCanyon', 'Colo')
 var pic2 = new Photo('birthday', 'home')
 
-// problem #3
+// problem #3 - using object constructor method
 
 function Person(name, age, gender){
     this.name = name
@@ -78,3 +78,9 @@ function School(){
 	    }
     }
 }
+
+var stu1 = new Student('mike', 9, 'male', '3rd')
+var stu2 = new Student('lisa', 11, 'female', '5th')
+var teach1 = new Teacher('mr. smith', 52, 'male', '20 years', 'math')
+var teach2 = new Teacher('mrs. Daniels', 37, 'female', '12 years', 'english')
+
